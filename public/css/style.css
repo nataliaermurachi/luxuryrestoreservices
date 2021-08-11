@@ -1,0 +1,238 @@
+:root {
+    --main-text: 'Roboto', sans-serif;
+    --side-text: 'Open Sans', sans-serif;
+    --bg-color: rgba(198, 226, 245, 0.808);
+    --link-color: rgba(9, 48, 75, 0.808);
+    --hover-color: rgba(179, 214, 238, 0.808);
+    --text-color: rgb(15, 46, 70);
+    --text-color--light: rgba(35, 61, 78, 0.808);
+    --heading-color: rgba(2, 14, 22, 0.808);
+}
+
+
+/* general */
+
+*,
+*::after,
+*::before {
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 10px;
+    font-family: var(--main-text);
+    color: var(--text-color);
+}
+
+.heading--primary {
+    color: var(--heading-color);
+    font-family: var(--side-text);
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+
+/* navigation */
+
+.navigation {
+    background-color: var(--bg-color);
+}
+
+.navigation__logo {
+    width: 4rem;
+    height: 3rem;
+    padding-top: .6rem;
+}
+
+.navigation__name {
+    color: var(--link-color);
+    margin-left: 5rem;
+}
+
+.navigation__link,
+.navigation__icon--menu {
+    color: var(--link-color);
+}
+
+.navigation__icon--menu {
+    margin-right: 1.5rem;
+    font-size: 3.5rem;
+}
+
+.navigation__list--mobile {
+    padding: 1.6rem 0;
+}
+
+.navigation__item--mobile {
+    padding: .5rem 0;
+}
+
+.navigation__link--mobile {
+    font-size: 1rem;
+    color: var(--link-color);
+}
+
+.navigation__link--mobile:hover {
+    border-bottom: 2px solid var(--hover-color);
+}
+
+
+/* About section */
+
+.about__text {
+    font-size: 1.3rem;
+    margin-bottom: 1.3rem;
+    color: var(--text-color--light);
+    line-height: 1.6;
+}
+
+.about__btn {
+    background-color: var(--link-color);
+    color: var(--hover-color);
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.about__btn:hover {
+    color: var(--link-color);
+    background-color: var(--hover-color);
+}
+
+
+/* services section */
+
+.services__container {
+    background: rgb(211, 219, 224);
+    background: linear-gradient(202deg, rgba(211, 219, 224, 0.6423611681000525) 0%, rgba(161, 191, 210, 1) 28%, rgba(8, 45, 77, 0.6746064723508753) 63%, rgba(13, 34, 74, 0.7104370912433835) 79%, rgba(2, 35, 64, 0.6713491433606473) 92%);
+}
+
+.services__header--secundary {
+    color: var(--text-color);
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+}
+
+.services__item {
+    padding: .6rem 0;
+    line-height: 1;
+    color: var(--text-color--light);
+    font-size: 1rem;
+}
+
+.services__icon {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+/* parallax */
+
+.parallax__pic {
+    opacity: 0.8;
+}
+
+
+/* contact badge */
+
+.contact__box {
+    background: rgb(192, 224, 242);
+    background: radial-gradient(circle, rgba(192, 224, 242, 0.6423611681000525) 0%, rgba(178, 209, 229, 1) 23%, rgba(108, 133, 163, 0.7404003837863271) 69%);
+}
+
+
+/* media queries */
+
+
+/* small devices less than 575.98 */
+
+@media (max-width: 575.98px) {
+    .about__text {
+        margin-bottom: 1.1rem;
+        font-size: .9rem;
+    }
+    .heading--primary {
+        font-size: 1.8rem;
+        margin-bottom: 1.7rem;
+    }
+    .services__header--secundary {
+        font-size: .7rem;
+        margin-bottom: .85rem;
+    }
+    .services__item {
+        font-size: .1rem;
+    }
+    .services__icon {
+        font-size: .1rem;
+    }
+}
+
+@media (max-width: 659.98px) {
+    .about__text {
+        margin-bottom: 1.2rem;
+        font-size: 1.1rem;
+    }
+    .heading--primary {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    .about__btn {
+        margin-top: 2rem;
+        font-size: .9rem;
+    }
+    .services__header--secundary {
+        font-size: .85rem;
+        margin-bottom: 1rem;
+    }
+    .services__item {
+        font-size: .1rem;
+    }
+    .services__icon {
+        font-size: .1rem;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 798.98px) {
+    .about__text {
+        margin-bottom: 1rem;
+        line-height: 1;
+    }
+    .heading--primary {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .services__header--secundary {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+    .services__item {
+        padding: .5rem 0;
+        font-size: .9rem;
+    }
+    .services__icon {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    .about__text {
+        margin-bottom: 1.1rem;
+        line-height: 1.4;
+    }
+    .heading--primary {
+        font-size: 2.8rem;
+        margin-bottom: 2.3rem;
+    }
+}
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {}
