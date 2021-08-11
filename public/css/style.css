@@ -103,7 +103,8 @@ body {
 
 /* services section */
 
-.services__container {
+.services__container,
+.gallery__container {
     background: rgb(211, 219, 224);
     background: linear-gradient(202deg, rgba(211, 219, 224, 0.6423611681000525) 0%, rgba(161, 191, 210, 1) 28%, rgba(8, 45, 77, 0.6746064723508753) 63%, rgba(13, 34, 74, 0.7104370912433835) 79%, rgba(2, 35, 64, 0.6713491433606473) 92%);
 }
@@ -171,6 +172,23 @@ body {
 .card .card__content {
     padding: 1rem;
     background-color: var(--bg-color);
+}
+
+
+/* galerry section */
+
+.carousel .carousel-item {
+    width: 20rem;
+    height: 20rem;
+}
+
+.gallery__container {
+    padding-top: .1rem;
+}
+
+.carousel {
+    padding-bottom: 3rem;
+    padding-top: 1rem;
 }
 
 
