@@ -219,7 +219,7 @@ body {
 
 .form__container {
     background-color: rgba(220, 238, 248, 0.726);
-    padding: 2.2rem;
+    padding: 1.5rem;
     border-radius: 25%;
 }
 
@@ -255,6 +255,11 @@ body {
 .email__btn:hover {
     color: var(--link-color);
     background-color: var(--hover-color);
+}
+
+.row.input__box {
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 
