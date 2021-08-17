@@ -1,0 +1,26 @@
+{
+    "name": "project-sandu",
+    "version": "1.0.0",
+    "description": "",
+    "main": "init.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nataliaermurachi/luxuryrestoreservices.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/nataliaermurachi/luxuryrestoreservices/issues"
+    },
+    "homepage": "https://github.com/nataliaermurachi/luxuryrestoreservices#readme",
+    "dependencies": {
+        "@sendgrid/mail": "^7.4.6",
+        "dotenv": "^10.0.0",
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "path": "^0.12.7"
+    }
+}

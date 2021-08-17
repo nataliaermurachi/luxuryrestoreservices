@@ -104,7 +104,8 @@ body {
 /* services section */
 
 .services__container,
-.gallery__container {
+.gallery__container,
+.email__box {
     background: rgb(211, 219, 224);
     background: linear-gradient(202deg, rgba(211, 219, 224, 0.6423611681000525) 0%, rgba(127, 176, 206, 0.561) 28%, rgba(49, 79, 105, 0.675) 63%, rgba(25, 59, 88, 0.671) 85%);
 }
@@ -214,11 +215,63 @@ body {
 }
 
 
+/* form design */
+
+.form__container {
+    background-color: rgba(220, 238, 248, 0.726);
+    padding: 2.2rem;
+    border-radius: 25%;
+}
+
+.input-field .prefix,
+.input-field label,
+.row div.input-field input[type=text]:focus+label,
+.row div.input-field input[type=tel]:focus+label,
+.row div.input-field input[type=email]:focus+label,
+.row div.input-field textarea:focus+label {
+    color: var(--text-color--light);
+}
+
+.input-field .prefix.active {
+    color: var(--text-color);
+}
+
+.row div.input-field input[type=text]:focus,
+.row div.input-field input[type=tel]:focus,
+.row div.input-field input[type=email]:focus,
+.row div.input-field textarea:focus {
+    border-bottom: 2px solid var(--text-color--light);
+    box-shadow: none;
+}
+
+.submit__btn,
+.email__btn {
+    background-color: var(--link-color);
+    color: var(--hover-color);
+    padding: .5rem 1.8rem;
+}
+
+.submit__btn:hover,
+.email__btn:hover {
+    color: var(--link-color);
+    background-color: var(--hover-color);
+}
+
+
 /* contact badge */
 
 .contact__box {
     background: rgb(192, 224, 242);
     background: radial-gradient(circle, rgba(192, 224, 242, 0.6423611681000525) 0%, rgba(178, 209, 229, 1) 23%, rgba(108, 133, 163, 0.7404003837863271) 69%);
+}
+
+
+/* sent page */
+
+.email__box {
+    width: 60%;
+    margin: 3rem auto;
+    padding: 1.5rem;
 }
 
 
@@ -286,6 +339,14 @@ body {
         font-size: 2rem;
         padding: 1rem;
     }
+    .form__container {
+        padding: 1.8rem;
+        border-radius: 10%;
+    }
+    .email__header {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media (max-width: 660px) {
@@ -338,6 +399,14 @@ body {
     .footer__heading {
         margin-top: 1rem;
     }
+    .form__container {
+        padding: 2rem;
+        border-radius: 15%;
+    }
+    .email__header {
+        font-size: 1.6rem;
+        margin-bottom: 1.7rem;
+    }
 }
 
 
@@ -378,6 +447,14 @@ body {
         font-size: 2.3rem;
         padding: 1.4rem;
     }
+    .form__container {
+        padding: 2.1rem;
+        border-radius: 20%;
+    }
+    .email__header {
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+    }
 }
 
 
@@ -392,9 +469,16 @@ body {
         font-size: 2.8rem;
         margin-bottom: 2.3rem;
     }
+    .email__header {
+        font-size: 2.5rem;
+        margin-bottom: 2.1rem;
+    }
 }
 
 
 /* Large devices (desktops, less than 1200px) */
 
 @media (max-width: 1199.98px) {}
+
+
+/* api key = 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 */
